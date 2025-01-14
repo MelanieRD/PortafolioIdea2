@@ -1,0 +1,48 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #332528;
+  /*
+  #feaa00
+#788403
+#332528
+
+  
+  */
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  flex: 1;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex: 1;
+}
+
+.nav-links li {
+  color: white;
+  font-weight: bolder;
+  list-style: none;
+  font-size: 1vw;
+  text-shadow: black 2px 2px 3px;
+
+  padding: 5px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.nav-links li:hover {
+  color: rgb(106, 150, 125);
+  transition: 0.5s;
+}
+
+.toggleMenu {
+  flex: 1;
+}

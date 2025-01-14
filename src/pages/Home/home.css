@@ -1,0 +1,42 @@
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.home .content {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px;
+  margin: 30px;
+}
+
+.stats {
+  flex: 1;
+  background-color: rgb(41, 105, 84);
+}
+.dropContainer {
+  display: flex;
+
+  padding: 10px;
+  padding-top: 30px;
+  overflow: hidden;
+}
+
+.dropdesign {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+  width: 50vw;
+  height: 20vw;
+
+  height: 25vw;
+  background-color: #788403;
+  border-radius: 30vw 0 25vw 0;
+}

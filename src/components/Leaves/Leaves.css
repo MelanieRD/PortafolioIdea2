@@ -1,0 +1,22 @@
+.upLeaves {
+  display: flex;
+  justify-content: center;
+
+  width: 30vw;
+
+  height: 15vw;
+  background-color: #788403;
+  box-shadow: 0 0 15px 4px #36a2c4;
+  border-radius: 30vw 0 25vw 0;
+}
+
+.aboveLeaves {
+  display: flex;
+  justify-content: center;
+
+  width: 30vw;
+
+  height: 15vw;
+  background-color: #788403;
+  border-radius: 30vw 0 25vw 0;
+}

@@ -1,0 +1,7 @@
+.imgContainer {
+  display: flex;
+}
+
+.imgCharacter {
+  width: 25vw;
+}

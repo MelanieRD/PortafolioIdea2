@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Otras fuentes para probar despues: Monaco, Fantasy, Helvética, Verdana, Candara, Cambria,  */
+  font-family: system-ui;
+}
+.app {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

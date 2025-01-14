@@ -1,0 +1,23 @@
+/* About me */
+
+.aboutme {
+  /* background-color: antiquewhite; */
+}
+
+.line1 {
+  color: rgb(225, 152, 152);
+  font-weight: bolder;
+  font-size: 4vw;
+}
+
+.line2 {
+  color: #a4a845;
+  font-weight: bolder;
+  font-size: 6vw;
+}
+
+.line3 {
+  color: #657928;
+  font-weight: 500;
+  font-size: 1.5vw;
+}
