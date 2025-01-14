@@ -3,7 +3,6 @@
   flex-direction: column;
 
   text-align: center;
-  height: 50vw;
   background-color: #98cae8;
 }
 
@@ -13,7 +12,15 @@
   margin: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
-  padding: 10px;
+  padding-top: 5vw;
+  padding-bottom: 1vw;
+}
+
+.branchContainer {
+  display: flex;
+  flex: 2;
+  justify-content: flex-start;
+  flex-direction: row;
 }
 
 .branch {
@@ -25,8 +32,21 @@
 
 .trunk {
   display: flex;
-  flex: 1;
-  background-color: #8c3b1b;
+  width: 90vw;
+  height: 4vw;
+  border-radius: 0vw 0vw 10vw 0;
+  border: #692d15 0.5vw solid;
+  background-color: #7e361a;
+
+  justify-content: flex-end;
+}
+
+.trunkhole {
+  height: 3vw;
+  width: 4vw;
+  border-radius: 10vw 0vw 10vw 0;
+  border: #552410 0.4vw solid;
+  background-color: #692d15;
 }
 
 /* Leaves */

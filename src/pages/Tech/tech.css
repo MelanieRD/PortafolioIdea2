@@ -4,6 +4,11 @@
   margin: 50px;
 }
 
+.techContainer h1 {
+  font-size: 2vw;
+  margin: 1rem;
+}
+
 .technologies {
   display: flex;
   flex-direction: row;
@@ -36,8 +41,8 @@
 }
 
 .technologies .icon {
-  width: 100px;
-  height: 80px;
+  width: 8vw;
+  height: 6vw;
   margin: 10px;
 
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
