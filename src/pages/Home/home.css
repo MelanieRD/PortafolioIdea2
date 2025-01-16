@@ -40,3 +40,14 @@
   background-color: #788403;
   border-radius: 30vw 0 25vw 0;
 }
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+  }
+
+  .home .content {
+    flex: 1;
+  }
+  
+}
