@@ -1,5 +1,6 @@
 import "./contentAbout.css";
 
+
 export const ContentAbout = () => {
   return (
     <div className="aboutme">

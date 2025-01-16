@@ -1,0 +1,33 @@
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+
+  background-image: url("../img/container.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+
+}
+
+.iconContainer:hover {
+  background-color: #ffc85a7e;
+  
+  /* X, Y, Opacity */
+  box-shadow: 0vw 0vw 0.8vw #ffc85a7e;
+ 
+  border-radius: 20px;
+  cursor: pointer;
+  transform: scale(1.2) !important;
+  transition: 0.5s;
+}
+
+.technologies .icon {
+  width: 8vw;
+  height: 6vw;
+  margin: 10px;
+
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}

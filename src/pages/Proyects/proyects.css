@@ -1,38 +1,65 @@
+
+
 .proyectsContainer {
   display: flex;
   flex-direction: column;
-
   text-align: center;
   background-color: #98cae8;
+  
 }
 
 .titleProyects {
-  font-size: 3.5vw;
+  font-size: 3vw;
   color: white;
   margin: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
-  padding-top: 5vw;
+  padding-top: 2vw;
   padding-bottom: 1vw;
 }
 
 .branchContainer {
   display: flex;
-  flex: 2;
-  justify-content: flex-start;
-  flex-direction: row;
+  width: 200vh;
+  flex: 1;
+  flex-direction: column; 
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+ overflow-x: scroll;
+ overflow-y: hidden;
+  
 }
 
+.branchContainer::-webkit-scrollbar {
+
+ height: 2vw;
+}
+
+.branchContainer::-webkit-scrollbar-track {
+  background: #98cae8; /* Color de fondo de la pista de desplazamiento */
+}
+
+.branchContainer::-webkit-scrollbar-thumb {
+  background: #4d4848; /* Color de la barra de desplazamiento */
+  border-radius: 1vw; /* Bordes redondeados de la barra de desplazamiento */
+}
+
+.branchContainer::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color de la barra de desplazamiento al pasar el ratón */
+}
+
+
+
 .branch {
-  display: flex;
-  flex: 2;
-  justify-content: center;
+  display: inline-flex;
+  justify-content: flex-end;
   flex-direction: column;
+  z-index: 5;
 }
 
 .trunk {
   display: flex;
-  width: 90vw;
+  width: 250vw;
   height: 4vw;
   border-radius: 0vw 0vw 10vw 0;
   border: #692d15 0.5vw solid;
@@ -53,6 +80,22 @@
 .leaves {
   display: flex;
   flex: 1;
-  justify-content: center;
+  justify-content: start;
   flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .branchContainer {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .branchContainer::-webkit-scrollbar {
+    height: 4vw; /* Ajusta la altura de la barra de desplazamiento para dispositivos móviles */
+  }
+
+  .branchContainer::-webkit-scrollbar-thumb {
+    border-radius: 2vw; /* Ajusta el radio de borde para dispositivos móviles */
+  }
 }
