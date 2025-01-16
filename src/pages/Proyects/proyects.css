@@ -28,7 +28,13 @@
   padding-bottom: 1vw;
  overflow-x: scroll;
  overflow-y: hidden;
+ 
+ direction: rtl; /* right to left, como que lo voltea XD1 */
   
+}
+
+.branchContainer > * {
+  direction: ltr; /* contenido del contenedor se mantiene como estaba */
 }
 
 .branchContainer::-webkit-scrollbar {
