@@ -47,8 +47,8 @@ export const Proyects = () => {
           <Leaves TypeLeaves={"upLeaves"} />
           <Leaves TypeLeaves={"upLeaves"} />
           <Leaves TypeLeaves={"upLeaves"} />
-          <Leaves TypeLeaves={"upLeaves"} />
-          <Leaves TypeLeaves={"upLeaves"} />
+     
+       
           
     
           </div>

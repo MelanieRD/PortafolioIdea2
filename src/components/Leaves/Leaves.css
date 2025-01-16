@@ -1,12 +1,13 @@
 .upLeaves {
   display: flex;
-  min-width: 10vw;
-  min-height: 6vw;
+  width: 24vw;
+  height: 16vw;
   background-color: #788403;
   border: #788403 solid 0.8vw;
   /* box-shadow: 0 0 1vw 0.1vw #36a2c4; */
   box-shadow: 0.5vw 1.5vw 0vw 0.5vw #08775f;
   border-radius: 30vw 0 28vw 0vw;
+  margin-right: 9vw;
 
   overflow: hidden;
   transform-origin: bottom;
@@ -16,21 +17,20 @@
 
 .downLeaves {
   display: flex;
-  /* width: 24vw;
-  height: 16vw; */
-  min-width: 10vw;
-  min-height: 6vw;
-  margin-right: 5vw;
+  width: 24vw;
+  height: 16vw;
   background-color: #788403;
   border: #788403 solid 0.8vw;
   /* box-shadow: 0 0 1vw 0.1vw #36a2c4; */
   box-shadow: -0.5vw -1vw 0vw 0.1vw #08775f;
   border-radius: 20vw 0vw 20vw 0vw;
   rotate: 85deg;
-  translate: -3vw -4.5vw;
+  translate: -3vw -0vw;
+  margin-bottom: 3vw;
+  margin-right: 5vw;
 
   overflow: hidden;
-flex-shrink: 0;
+  flex-shrink: 0;
   z-index: -1;
 }
 
@@ -70,6 +70,7 @@ flex-shrink: 0;
 
 .downLeave {
   flex: 1.5;
+  
   justify-content: center;
 }
 
@@ -99,7 +100,7 @@ flex-shrink: 0;
     width: 48vw;
     height: 32vw;
 
-    translate: -3vw -1.5vw;
+    translate: -3vw -0.5vw;
   }
   .leaveContainer {
     width: 44vw;

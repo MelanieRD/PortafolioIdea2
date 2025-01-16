@@ -11,7 +11,7 @@
 .titleProyects {
   font-size: 3vw;
   color: white;
-  margin: 1rem;
+  margin: 1vw;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
   padding-top: 2vw;
@@ -20,7 +20,8 @@
 
 .branchContainer {
   display: flex;
-  width: 200vh;
+  /* width: 200vh; */
+  width: 200vw;
   flex: 1;
   flex-direction: column; 
   padding-top: 1vw;
@@ -55,15 +56,19 @@
   justify-content: flex-end;
   flex-direction: column;
   z-index: 5;
+
+  /*Para el scroll hice esto grandisimo XD*/
+  width: 250vw;
 }
 
 .trunk {
   display: flex;
-  width: 250vw;
+  width: 140vw;
   height: 4vw;
   border-radius: 0vw 0vw 10vw 0;
   border: #692d15 0.5vw solid;
   background-color: #7e361a;
+
 
   justify-content: flex-end;
 }
@@ -100,6 +105,7 @@
 
   .trunk {
     height: 8vw;
+    width: 240vw;
     border: #692d15 1vw solid;
   }
 
