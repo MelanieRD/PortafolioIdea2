@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  padding: 10px;
+  padding: 1vw;
 
   background-image: url("../img/container.png");
   background-size: contain;
@@ -17,7 +17,7 @@
   /* X, Y, Opacity */
   box-shadow: 0vw 0vw 0.8vw #ffc85a7e;
  
-  border-radius: 20px;
+  border-radius: 1vw;
   cursor: pointer;
   transform: scale(1.2) !important;
   transition: 0.5s;
@@ -30,4 +30,22 @@
 
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
+}
+
+@media(max-width: 768px) {
+
+
+  .iconContainer:hover {
+    transform: scale(1.1) !important;
+  }
+
+  .iconContainer {
+    padding: 2vw;
+  }
+
+  .technologies .icon {
+    width: 16vw;
+    height: 14vw;
+  }
+  
 }

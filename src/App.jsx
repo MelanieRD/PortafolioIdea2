@@ -7,39 +7,36 @@ import { Home } from "./pages/Home/Home";
 import { Tech } from "./pages/Tech/Tech";
 import { Proyects } from "./pages/Proyects/Proyects";
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import { useRef } from "react";
 
 function App() {
+  const parllaxRef = useRef();
 
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
+    
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+
   }, []);
 
+  // offset={ heightState * indexOfLayer }
 
 
 
   return (
-      <Parallax pages={ isMobile? 3 : 2.5}>
+    
         
-    <div className="app" style={{ backgroundColor: "#F2EBE5" }}>
-    <ParallaxLayer offset={0}  >
+    <div className="app" style={{ backgroundColor: "#F2EBE5", overflow: "hidden" }}>
+
       <Nav />
       <Home />
       <Tech />
-      </ParallaxLayer>
-
-      <ParallaxLayer offset={isMobile? 2: 1} horizontal={false} >
       <Proyects />
-      </ParallaxLayer>
+     
     </div>
    
-    </Parallax>
+   
   );
 }
 

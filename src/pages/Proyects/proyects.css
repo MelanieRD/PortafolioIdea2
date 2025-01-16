@@ -87,7 +87,6 @@
 @media (max-width: 768px) {
   .branchContainer {
     
-    overflow-x: auto;
     overflow-y: hidden;
   }
 

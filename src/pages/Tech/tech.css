@@ -1,12 +1,12 @@
 .techContainer {
   display: flex;
   flex-direction: column;
-  margin: 50px;
+  margin: 2vw;
 }
 
 .techContainer h1 {
   font-size: 2vw;
-  margin: 1rem;
+  margin: 1vw;
 }
 
 .technologies {
@@ -15,6 +15,14 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
 
-  padding: 10px;
-  margin: 10px;
+  padding: 1vw;
+  margin: 1vw;
+}
+
+@media (max-width: 768px) {
+  .techContainer h1 {
+    font-size: 4vw;
+  }
+
+  
 }
