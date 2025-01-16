@@ -9,7 +9,7 @@ export const Home = () => {
 
   const [ Aboutref, AboutinView] = useInView({
     //top right bottom left
-    threshold: 0.60, 
+    threshold: 0.80, 
   });
 
   const [exitTransition, exitTransitionAPI] = useSpring(()=>({
