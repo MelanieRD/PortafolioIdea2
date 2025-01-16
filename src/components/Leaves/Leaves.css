@@ -1,8 +1,6 @@
 .upLeaves {
   display: flex;
-
   width: 24vw;
-
   height: 16vw;
   background-color: #788403;
   border: #788403 solid 0.8vw;
@@ -17,9 +15,7 @@
 
 .downLeaves {
   display: flex;
-
   width: 24vw;
-
   height: 16vw;
   background-color: #788403;
   border: #788403 solid 0.8vw;
@@ -87,4 +83,42 @@
   font-size: 1vw;
   font-weight: bold;
   transition: 0.5s;
+}
+
+@media(max-width: 768px) {
+  .upLeaves {
+    width: 48vw;
+    height: 32vw;
+  }
+  .downLeaves {
+    border-radius: 30vw 0 28vw 0vw;
+    width: 48vw;
+    height: 32vw;
+  }
+  .leaveContainer {
+    width: 44vw;
+  height: 40vw;
+  }
+
+  .downLeave {
+    flex: 1;
+  }
+  
+  .textContainer {
+    font-size: 2vw;
+    width: 30vw;
+  }
+  .proyectTitle {
+    font-size: 2vw;
+  }
+
+  .frac {
+    width: 60vw;
+  }
+  
+  .upLeave {
+    min-height: 18vw;
+    background-position: -2vw -1.4vw;
+  }
+  
 }

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 import "./App.css";
@@ -9,8 +9,23 @@ import { Proyects } from "./pages/Proyects/Proyects";
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 function App() {
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+
+
+
   return (
-      <Parallax pages={2.5}>
+      <Parallax pages={ isMobile? 3 : 2.5}>
         
     <div className="app" style={{ backgroundColor: "#F2EBE5" }}>
     <ParallaxLayer offset={0}  >
@@ -19,7 +34,7 @@ function App() {
       <Tech />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={1} horizontal={false} >
+      <ParallaxLayer offset={isMobile? 2: 1} horizontal={false} >
       <Proyects />
       </ParallaxLayer>
     </div>

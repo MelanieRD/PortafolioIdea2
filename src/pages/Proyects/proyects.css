@@ -86,9 +86,17 @@
 
 @media (max-width: 768px) {
   .branchContainer {
-    width: 100%;
+    
     overflow-x: auto;
     overflow-y: hidden;
+  }
+
+  .trunk {
+    height: 8vw;
+  }
+
+  .trunkhole {
+    height: 8vw;
   }
 
   .branchContainer::-webkit-scrollbar {
