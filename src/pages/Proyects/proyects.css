@@ -85,17 +85,26 @@
 }
 
 @media (max-width: 768px) {
+
+
+  .leaves {
+    flex: 2;
+  }
+
   .branchContainer {
-    
+    width: 100%;
+    padding-bottom: 6vw;
+    overflow-x: scroll;
     overflow-y: hidden;
   }
 
   .trunk {
     height: 8vw;
+    border: #692d15 1vw solid;
   }
 
   .trunkhole {
-    height: 8vw;
+    height: 5vw;
   }
 
   .branchContainer::-webkit-scrollbar {

@@ -26,6 +26,7 @@ export const Leaves = ({ TypeLeaves }) => {
   return (
     <animated.div style={growingLeaves} className={TypeLeaves}>
       <div className="leaveContainer">
+        
         <div className="upLeave frac"></div>
         <div className="downLeave frac">
           <div className="textContainer">
@@ -33,6 +34,7 @@ export const Leaves = ({ TypeLeaves }) => {
             <p> A minigame app about pets and produtivity</p>
           </div>
         </div>
+        
       </div>
     </animated.div>
   );

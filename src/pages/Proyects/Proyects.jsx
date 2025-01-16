@@ -43,10 +43,14 @@ export const Proyects = () => {
         <div className="branch">
           
           <div className="leaves">
-            <Leaves TypeLeaves={"upLeaves"} />
-            <Leaves TypeLeaves={"upLeaves"} />
-            <Leaves TypeLeaves={"upLeaves"} />
-            <Leaves TypeLeaves={"upLeaves"} />
+          <Leaves TypeLeaves={"upLeaves"} />
+          <Leaves TypeLeaves={"upLeaves"} />
+          <Leaves TypeLeaves={"upLeaves"} />
+          <Leaves TypeLeaves={"upLeaves"} />
+          <Leaves TypeLeaves={"upLeaves"} />
+          <Leaves TypeLeaves={"upLeaves"} />
+          
+    
           </div>
           <div className="trunk">
             <div className="trunkhole"></div>
@@ -55,6 +59,9 @@ export const Proyects = () => {
           <div className="leaves">
             <Leaves TypeLeaves={"downLeaves"} />
             <Leaves TypeLeaves={"downLeaves"} />
+            <Leaves TypeLeaves={"downLeaves"} />
+            <Leaves TypeLeaves={"downLeaves"} />
+            
           </div>
          
         </div>
