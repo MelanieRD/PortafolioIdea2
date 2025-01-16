@@ -5,7 +5,7 @@
 }
 
 .line1 {
-  color: rgb(207, 21, 21);
+  color: rgb(225, 152, 152);
   font-weight: bolder;
   font-size: 4vw;
 }
@@ -24,14 +24,14 @@
 
 @media (max-width: 768px) {
   .line1 {
-    font-size: 30vw;
+    font-size: 13vw;
   }
 
   .line2 {
-    font-size: 8vw;
+    font-size: 15vw;
   }
 
   .line3 {
-    font-size: 2vw;
+    font-size: 4vw;
   }
 }

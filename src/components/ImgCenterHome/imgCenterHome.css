@@ -5,3 +5,10 @@
 .imgCharacter {
   width: 25vw;
 }
+
+@media (max-width: 768px) {
+  .imgCharacter {
+    width: 50vw;
+  }
+  
+}

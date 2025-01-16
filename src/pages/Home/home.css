@@ -34,8 +34,6 @@
   align-items: end;
 
   width: 50vw;
-  height: 20vw;
-
   height: 25vw;
   background-color: #788403;
   border-radius: 30vw 0 25vw 0;
@@ -48,6 +46,20 @@
 
   .home .content {
     flex: 1;
+    
   }
+
+  .dropdesign {
+    display: flex;
+    justify-content: center;
+    align-items: end;
   
+    width: 90vw;
+    height: 40vw;
+  
+    height: 50vw;
+    background-color: #788403;
+    border-radius: 30vw 0 25vw 0;
+  }
+
 }
