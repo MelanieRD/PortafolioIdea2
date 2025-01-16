@@ -1,7 +1,7 @@
 .upLeaves {
   display: flex;
   width: 24vw;
-  height: 16vw;
+  height: 16vw ;
   background-color: #788403;
   border: #788403 solid 0.8vw;
   /* box-shadow: 0 0 1vw 0.1vw #36a2c4; */
@@ -13,7 +13,10 @@
   transform-origin: bottom;
   flex-shrink: 0;
   z-index: -1;
+
+  opacity: 0.9;
 }
+
 
 .downLeaves {
   display: flex;
@@ -40,15 +43,16 @@
   width: 20vw;
   height: 24vw;
   gap: 0.5vw;
-  opacity: 0.7;
+
   transition: 0.9s;
   rotate: -35deg;
   cursor: pointer;
+
+ 
 }
 
 .leaveContainer:hover {
-  opacity: 1;
-
+  opacity: 1 ; 
   transition: 0.5s;
 }
 

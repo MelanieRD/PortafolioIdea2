@@ -24,7 +24,7 @@ export const Leaves = ({ TypeLeaves }) => {
   useEffect(() => {}, [LeavePosition]);
 
   return (
-    <animated.div style={growingLeaves} className={TypeLeaves}>
+    <animated.div style={growingLeaves} className={TypeLeaves} onMouseEnter={() =>{console.log("enter")}}>
       <div className="leaveContainer">
         
         <div className="upLeave frac"></div>

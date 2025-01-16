@@ -12,8 +12,8 @@
   justify-content: center;
   align-items: center;
 
-  padding: 30px;
-  margin: 30px;
+  padding: 1vw;
+  margin: 2vw;
 }
 
 .stats {
@@ -22,9 +22,10 @@
 }
 .dropContainer {
   display: flex;
-
-  padding: 10px;
-  padding-top: 30px;
+  /* background-color: aqua; */
+  
+  
+  padding-top: 1vw;
   overflow: hidden;
 }
 
@@ -32,6 +33,7 @@
   display: flex;
   justify-content: center;
   align-items: end;
+  margin: 1vw;
 
   width: 50vw;
   height: 25vw;

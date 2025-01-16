@@ -7,27 +7,38 @@ export const Proyects = () => {
   const titleText = "Proyects".split("");
   const [ref, inView] = useInView({
     //top right bottom left
-    rootMargin: "10px",
+    threshold: 0.7, // El 50% del elemento debe estar visible para que se considere "en vista"
   });
+  
+  useEffect(() => {
+    console.log(inView);
+    if (inView) {
+      proyectsTextTrailAPI.start({ opacity: 1 });
+      lefttoRightAPI.start({x: 0});
+    } else {
+      proyectsTextTrailAPI.start({ opacity: 0 });
+      lefttoRightAPI.start({x: -1000, config: { duration: 500 }});
+    }
+  }, [inView]);
 
   const [proyectsTextTrail, proyectsTextTrailAPI] = useTrail(
     titleText.length,
     {
       from: { opacity: 0, x: -100 },
       to: { opacity: 1, x: 0 },
-      config: { duration: 150 },
+      config: { duration: 100 },
     },
     []
   );
 
   const [lefttoRight, lefttoRightAPI] = useSpring(() => ({
-    from: { x: inView ? 0 : -500 },
-    to: { x: inView ? -500 : 0 },
-    config: { duration: 1000 },
+    from: { x: 0  },
+    to: { x: -1000  },
+    config: { duration: 100 },
   }));
 
   return (
-    <animated.div className="proyectsContainer" ref={ref}>
+    <animated.div ref={ref} className="proyectsContainer">
       <div className="titleProyects">
         <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
           {proyectsTextTrail.map((props, index) => (
@@ -37,7 +48,7 @@ export const Proyects = () => {
           ))}
         </div>
       </div>
-            <h2>websites</h2>
+          
       <animated.div style={lefttoRight} className="branchContainer">
      
         <div className="branch">
@@ -67,7 +78,7 @@ export const Proyects = () => {
         </div>
       
       </animated.div>
-          <h2>mini-games & mods</h2>
+    
       
     </animated.div>
   );
