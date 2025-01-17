@@ -14,16 +14,15 @@
     display: flex;
     justify-content: center; 
     align-items: center;
-  
-    flex: 0.5;
+    flex: 1;
 
     background-color:#98cae8;
 }
 
 .titleContact h2{
-    font-size: 3.5vh;
+    font-size: 3.5vw;
     color: white;
-    margin-top: 2vw;
+    
 }
 
 .upContactContainer{
@@ -37,21 +36,36 @@
 
 }
 
-.sectionUp{
+.sectionRight {
     /* background-color: antiquewhite; */
     flex: 2;
-    overflow: hidden;
-}
+    display: flex;
+    align-items: center;
+    justify-content: end;
 
-.sectionUp .cornerDecor{
     
 }
 
+.sectionLeft{
+    /* background-color: antiquewhite; */
+    flex: 2;
+    display: flex;  
+    align-items: start;
+
+    
+}
 
 .downContactContainer{
     flex: 1;
     width: 100%;
     background-color: rgb(95, 170, 255);
+}
+
+
+.right .cornerDecor{
+    background-color: blueviolet;
+   
+
 }
 
 /* .contactContainer h1{

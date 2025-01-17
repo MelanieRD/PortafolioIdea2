@@ -28,7 +28,7 @@ export const Contact = () => {
 
                 
                 <div className="upContactContainer">
-                <div className="sectionUp left">
+                <div className="sectionLeft">
                     <div className=" cornerDecor" >
                         <LeavesDeco TypeLeaves={"cornerRightLDeco"} Rotationnum={10} translateXnum={-1} translateYnum={5} scale={1.3} Color1={"rgb(252,209,215)"} Color2={"rgb(233,177,205)"} Color1Opacity={"rgba(253, 158, 225, 0.222)"}/>
                         <LeavesDeco TypeLeaves={"cornerRightLDeco"} Rotationnum={55} translateXnum={-3} translateYnum={5} scale={1.3} Color1={"rgb(252,209,215)"} Color2={"rgb(233,177,205)"} Color1Opacity={"rgba(253, 158, 225, 0.222)"} />
@@ -38,7 +38,7 @@ export const Contact = () => {
                 </div>
                 <div className="titleContact"> <h2>Get in touch</h2></div>
 
-                <div className="sectionUp right">
+                <div className="sectionRight">
                 <div className=" cornerDecor" style={{transform: "rotate(180deg)"}}>
                         <LeavesDeco TypeLeaves={"cornerRightLDeco"} Rotationnum={10} translateXnum={-1} translateYnum={5} scale={1.3} Color1={"rgb(252,209,215)"} Color2={"rgb(233,177,205)"} Color1Opacity={"rgba(253, 158, 225, 0.222)"}/>
                         <LeavesDeco TypeLeaves={"cornerRightLDeco"} Rotationnum={55} translateXnum={-3} translateYnum={5} scale={1.3} Color1={"rgb(252,209,215)"} Color2={"rgb(233,177,205)"} Color1Opacity={"rgba(253, 158, 225, 0.222)"} />
