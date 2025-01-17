@@ -77,22 +77,37 @@
     /* background-color: rgb(95, 170, 255);
     border-radius: 30vw/5vw 5vw 0 0 ; */
   
-    background-image: radial-gradient(ellipse farthest-corner at 50vw 1vw , rgb(95, 170, 255) 50vw, rgba(255, 255, 255, 0.918) 0%, #21643b 50%); */
-
-
+    background-image: radial-gradient(ellipse farthest-corner at 50vw 1vw , rgb(95, 170, 255) 50vw, rgba(255, 255, 255, 0.918) 0%, #21643b 50%); 
     /* width: 100%;
     background-image: radial-gradient(ellipse farthest-corner at 30vw 1vw , #4580ff 50vw, rgba(17, 80, 17, 0.918) 0%, #077e35 50%);  */
 }
 
 
+@media (max-width: 768px) {
 
+    .upContactContainer{
+        flex: 3;
+       
+    }
+    
+    .cornerDecor{
+        scale: 2;
+    }
 
+    .titleContact h2{
+        font-size: 5.5vw;
+        color: white;
+        
+    }
 
-
-
-/* .contactContainer h1{
-    color: white;
-    font-size: 3vw;
-
-} */
-
+    .middleContactContainer{
+        flex: 2;
+    }
+    .wave{
+        flex: 0.5;
+    }
+   .downContactContainer{
+    flex: 1;
+    background-image: radial-gradient(ellipse farthest-corner at 50vw 1vw , rgb(95, 170, 255) 50vw, rgba(255, 255, 255, 0.918) 0%, #21643b 50%); 
+   }
+}
