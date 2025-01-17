@@ -102,11 +102,16 @@
     flex: 2;
   }
 
+  .titleProyects{
+    margin-top: 30vw;
+  }
   .branchContainer {
     width: 100%;
     padding-bottom: 6vw;
     overflow-x: scroll;
     overflow-y: hidden;
+    margin-bottom: 30vw;
+
   }
 
   .trunk {
