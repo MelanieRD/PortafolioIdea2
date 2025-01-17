@@ -1,0 +1,59 @@
+
+  .branchContainerDeco {
+    display: flex;
+    /* width: 200vh; */
+    width: 100vw;
+    flex: 1;
+    flex-direction: column; 
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+   
+  /* direction: rtl;  right to left, como que lo voltea XD1 */
+    
+  }
+  
+  
+  
+  
+  .branchDeco {
+    display: inline-flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    z-index: 5;
+  
+    /*Para el scroll hice esto grandisimo XD*/
+    width: 15vw;
+  }
+  
+  .trunkDeco {
+    display: flex;
+    width: 30vw;
+    height: 3vw;
+    border-radius: 0vw 0vw 10vw 0;
+    border: #692d15 0.5vw solid;
+    background-color: #7e361a;
+  
+  
+    justify-content: flex-end;
+  }
+  
+  .trunkholeDeco {
+    height: 2vw;
+    width: 2vw;
+    border-radius: 10vw 0vw 10vw 0;
+    border: #552410 0.4vw solid;
+    background-color: #692d15;
+  }
+  
+  /* Leaves */
+  .leavesDeco {
+    display: flex;
+    flex: 1;
+    justify-content: start;
+    flex-direction: row;
+  }
+  
+  @media (max-width: 768px) {
+  
+  
+  }

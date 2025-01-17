@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 export const Leaves = ({ TypeLeaves, title, desc, img }) => {
   const [LeavePosition, setLeavePosition] = useState(0);
-  const randomDeg = Math.floor(Math.random() * 5 + 2);
+  const randomDeg = Math.floor(Math.random() * 5 + 3);
   const randomDuration = Math.floor(Math.random() * 500 + 1000);
   const randomScale = Math.random() * (0.3 - 0.1) + 0.7;
   const growingLeavesRef = useSpringRef();

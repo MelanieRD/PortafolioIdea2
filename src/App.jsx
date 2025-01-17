@@ -8,6 +8,7 @@ import { Tech } from "./pages/Tech/Tech";
 import { Proyects } from "./pages/Proyects/Proyects";
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import { useRef } from "react";
+import { Contact } from "./pages/Contact/Contact";
 
 function App() {
   const parllaxRef = useRef();
@@ -33,6 +34,7 @@ function App() {
       <Home />
       <Tech />
       <Proyects />
+      <Contact/>
      
     </div>
    

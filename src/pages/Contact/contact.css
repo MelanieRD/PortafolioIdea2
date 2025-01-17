@@ -1,0 +1,62 @@
+.contactContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #98cae8;
+    /* background-color: #332528; */
+
+    height: 100vh
+}
+
+
+.titleContact{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  
+    flex: 0.5;
+
+    background-color:#98cae8;
+}
+
+.titleContact h2{
+    font-size: 3.5vh;
+    color: white;
+    margin-top: 2vw;
+}
+
+.upContactContainer{
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    
+    width: 100%;
+
+}
+
+.sectionUp{
+    /* background-color: antiquewhite; */
+    flex: 2;
+    overflow: hidden;
+}
+
+.sectionUp .cornerDecor{
+    
+}
+
+
+.downContactContainer{
+    flex: 1;
+    width: 100%;
+    background-color: rgb(95, 170, 255);
+}
+
+/* .contactContainer h1{
+    color: white;
+    font-size: 3vw;
+
+} */
+
