@@ -1,10 +1,7 @@
 import { LiaLinkedin } from "react-icons/lia";
 import "./contact.css";
-import { TechIcon } from "../../components/TechIcon/TechIcon";
 import { animated, useTrail } from "@react-spring/web";
 import { FaArtstation } from "react-icons/fa";
-import { BranchDecoration } from "../../components/BranchDecoration/BranchDecoraton";
-import { LeavesDeco } from "../../components/BranchDecoration/LeavesDeco/LeavesDeco";
 import { FlowerCornerDeco } from "../../components/BranchDecoration/FlowerCornerDeco/FlowerCornerDeco";
 export const Contact = () => {
     const imgUrl = "url(./img/";
