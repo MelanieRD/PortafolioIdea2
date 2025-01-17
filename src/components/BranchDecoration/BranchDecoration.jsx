@@ -1,5 +1,5 @@
 import { to, useTrail, animated, useSpring, useInView } from "@react-spring/web";
-import "./BranchDecoration.css";
+import "./branchDecoration.css";
 import { useEffect } from "react";
 import { LeavesDeco } from "./LeavesDeco/LeavesDeco";
 
