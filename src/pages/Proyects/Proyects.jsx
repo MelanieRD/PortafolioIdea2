@@ -2,6 +2,7 @@ import { to, useTrail, animated, useSpring, useInView } from "@react-spring/web"
 import { Leaves } from "../../components/Leaves/Leaves";
 import "./proyects.css";
 import { useEffect, useState } from "react";
+import { BranchDecoration } from "../../components/BranchDecoration/BranchDecoration";
 
 export const Proyects = () => {
   const titleText = "Proyects".split("");
@@ -43,8 +44,12 @@ export const Proyects = () => {
   }));
 
   return (
+    <>
+          <div className="decobranchcute"><BranchDecoration Rotation={0} Scale={0.6} TranslateX={-35} TranslateY={-9}  /></div>
+          <div className="decobranchcute" style={{paddingTop:"10vw", paddingBottom:"10vw"}}><BranchDecoration Rotation={0} Scale={-0.7} TranslateX={15} TranslateY={-9}  /></div>  
     <animated.div ref={ref} className="proyectsContainer">
-      <div className="titleProyects">
+      
+      <div className="titleProyects">           
         <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
           {proyectsTextTrail.map((props, index) => (
             <animated.h2 style={props} key={index}>
@@ -63,11 +68,6 @@ export const Proyects = () => {
           <Leaves TypeLeaves={"upLeaves"} />
           <Leaves TypeLeaves={"upLeaves"} />
           <Leaves title={"Pet Myproductivity"} desc={"A productivity app"} TypeLeaves={"upLeaves"} img={"url(/img/proyect1.jpeg)"} />
-
-     
-       
-          
-    
           </div>
           <div className="trunk">
             <div className="trunkhole"></div>
@@ -80,12 +80,16 @@ export const Proyects = () => {
             <Leaves TypeLeaves={"downLeaves"} />
             
           </div>
-         
+
+          {!isMobile && <h1 style={{translate:"3vw 5vw", fontSize:"2vw"}}> 	&lt;--- Scroll me n///n</h1>} 
         </div>
       
       </animated.div>
-    
-      
+
     </animated.div>
+    <div className="decobranchcute" style={{paddingTop:"10vw", paddingBottom:"10vw"}}><BranchDecoration Rotation={0} Scale={-0.7} TranslateX={15} TranslateY={-9}  /></div>  
+
+           <div className="decobranchcute" style={{ paddingBottom:"15vw"}}><BranchDecoration Rotation={0} Scale={0.6} TranslateX={-35} TranslateY={-9}  /></div>  
+    </>
   );
 };

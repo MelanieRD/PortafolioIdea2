@@ -9,37 +9,42 @@
 }
 
 .titleProyects {
+  flex: 1;
   font-size: 3vw;
   color: white;
-  margin: 1vw;
+
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
   padding-top: 2vw;
-  padding-bottom: 1vw;
 }
 
 .branchContainer {
   display: flex;
   /* width: 200vh; */
   width: 200vw;
-  flex: 1;
+  flex: 3;
   flex-direction: column; 
-  padding-top: 1vw;
-  padding-bottom: 1vw;
+
  overflow-x: scroll;
  overflow-y: hidden;
+
  
  direction: rtl; /* right to left, como que lo voltea XD1 */
   
 }
+
+
+
+
+
 
 .branchContainer > * {
   direction: ltr; /* contenido del contenedor se mantiene como estaba */
 }
 
 .branchContainer::-webkit-scrollbar {
-
  height: 2vw;
+
 }
 
 .branchContainer::-webkit-scrollbar-track {
@@ -47,12 +52,14 @@
 }
 
 .branchContainer::-webkit-scrollbar-thumb {
-  background: #4d4848; /* Color de la barra de desplazamiento */
-  border-radius: 1vw; /* Bordes redondeados de la barra de desplazamiento */
+  border-radius: 1vw;
+  border: #692d15 0.5vw solid;
+  background-color: #7e361a;
 }
 
 .branchContainer::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Color de la barra de desplazamiento al pasar el ratón */
+  background: #9b4a31; /* Color de la barra de desplazamiento al pasar el ratón */
+  cursor: pointer;
 }
 
 
@@ -65,6 +72,8 @@
 
   /*Para el scroll hice esto grandisimo XD*/
   width: 250vw;
+  scale: 0.8;
+  translate: -30vw 0vw;
 }
 
 .trunk {
@@ -95,22 +104,39 @@
   flex-direction: row;
 }
 
+.decobranchcute{
+  max-height: 2vw;
+  background-color: #98cae8;
+}
+
 @media (max-width: 768px) {
 
+.proyectsContainer {
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+}
+
+.titleProyects {
+
+  font-size: 4vw;
+  padding-bottom: 3vw;
+
+}
 
   .leaves {
     flex: 2;
   }
 
   .titleProyects{
-    margin-top: 30vw;
+    margin: 5vw;
   }
   .branchContainer {
     width: 100%;
     padding-bottom: 6vw;
     overflow-x: scroll;
     overflow-y: hidden;
-    margin-bottom: 30vw;
+    /* margin-bottom: 30vw; if mobile1 */
+    scale: 1.1;
 
   }
 
@@ -130,5 +156,11 @@
 
   .branchContainer::-webkit-scrollbar-thumb {
     border-radius: 2vw; /* Ajusta el radio de borde para dispositivos móviles */
+  }
+
+  .branch {
+  
+    scale: 1;
+    translate: -10vw 0vw;
   }
 }

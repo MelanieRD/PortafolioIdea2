@@ -1,3 +1,4 @@
+
 .upLeavesDeco {
     display: flex;
     width: 10vw;
@@ -17,6 +18,11 @@
     translate: -10vw 2vw;
     opacity: 0.9;
   }
+
+  .small{
+    width: 8vw;
+    height: 10vw 
+  }
   
   
   .downLeavesDeco {
@@ -31,7 +37,7 @@
     rotate: 85deg;
     translate: 2vw -4vw;
   
-    margin-right: 5vw;
+    margin-right: 3vw;
   
     overflow: hidden;
     flex-shrink: 0;

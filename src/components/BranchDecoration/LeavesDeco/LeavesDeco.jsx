@@ -33,7 +33,7 @@ export const LeavesDeco = ({ TypeLeaves, title, desc, img, Rotationnum, translat
     transform: "rotate("+Rotationnum+"deg) translate("+translateXnum+"vw, "+ translateYnum+"vw) scale("+scale+")"
      ,width:Width+"vw", height:Height+"vw", backgroundColor: Color1, borderColor: Color1, boxShadow: "0.5vw 1.5vw 0vw 0.5vw "+Color2, zIndex:{Zindex}, ...movementLeaves, 
       }} className={TypeLeaves} onMouseEnter={() =>{console.log("enter")}}>
-      <div className="leaveContainerDeco">
+      <div className="leaveContainerDeco" >
         <div className="upLeaveDeco fracDeco" style={{ backgroundColor:Color1Opacity}}></div>
         <div className="downLeaveDeco fracDeco" style={{backgroundColor:Color1Opacity}}>
         </div>

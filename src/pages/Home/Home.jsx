@@ -9,13 +9,13 @@ export const Home = () => {
 
   const [ Aboutref, AboutinView] = useInView({
     //top right bottom left
-    threshold: 0.80, 
+    threshold: 0.30, 
   });
 
   const [exitTransition, exitTransitionAPI] = useSpring(()=>({
     from: { opacity: 0,  },
     to: { opacity: 1 },
-    config: { duration: 1000 },
+    config: { duration: 2000 },
   }));
 
   useEffect(() => {
