@@ -5,6 +5,7 @@ import { animated, useTrail } from "@react-spring/web";
 import { FaArtstation } from "react-icons/fa";
 import { BranchDecoration } from "../../components/BranchDecoration/BranchDecoraton";
 import { LeavesDeco } from "../../components/BranchDecoration/LeavesDeco/LeavesDeco";
+import { FlowerCornerDeco } from "../../components/BranchDecoration/FlowerCornerDeco/FlowerCornerDeco";
 export const Contact = () => {
     const imgUrl = "url(./img/";
     const extension = ".png)";
@@ -29,10 +30,9 @@ export const Contact = () => {
                 
                 <div className="upContactContainer">
                 <div className="sectionLeft">
-                    <div className=" cornerDecor" >
-                        <LeavesDeco TypeLeaves={"cornerRightLDeco"} Rotationnum={10} translateXnum={-1} translateYnum={5} scale={1.3} Color1={"rgb(252,209,215)"} Color2={"rgb(233,177,205)"} Color1Opacity={"rgba(253, 158, 225, 0.222)"}/>
-                        <LeavesDeco TypeLeaves={"cornerRightLDeco"} Rotationnum={55} translateXnum={-3} translateYnum={5} scale={1.3} Color1={"rgb(252,209,215)"} Color2={"rgb(233,177,205)"} Color1Opacity={"rgba(253, 158, 225, 0.222)"} />
-                        <LeavesDeco TypeLeaves={"cornerRightLDeco"} Rotationnum={80} translateXnum={-10} translateYnum={10} scale={1.4} Color1={"rgb(252,209,215)"} Color2={"rgb(233,177,205)"} Color1Opacity={"rgba(253, 158, 225, 0.222)"}/>
+                    <div className=" cornerDecor" style={{ transform: "scaleY(-1)" }}>
+                    <FlowerCornerDeco/>
+                        
                         {/* <LeavesDeco TypeLeaves={"cornerRightLDeco"} Rotationnum={0} translateXnum={0} translateYnum={0}  /> */}
                     </div>
                 </div>
@@ -40,15 +40,16 @@ export const Contact = () => {
 
                 <div className="sectionRight">
                 <div className=" cornerDecor" style={{transform: "rotate(180deg)"}}>
-                        <LeavesDeco TypeLeaves={"cornerRightLDeco"} Rotationnum={10} translateXnum={-1} translateYnum={5} scale={1.3} Color1={"rgb(252,209,215)"} Color2={"rgb(233,177,205)"} Color1Opacity={"rgba(253, 158, 225, 0.222)"}/>
-                        <LeavesDeco TypeLeaves={"cornerRightLDeco"} Rotationnum={55} translateXnum={-3} translateYnum={5} scale={1.3} Color1={"rgb(252,209,215)"} Color2={"rgb(233,177,205)"} Color1Opacity={"rgba(253, 158, 225, 0.222)"} />
-                        <LeavesDeco TypeLeaves={"cornerRightLDeco"} Rotationnum={80} translateXnum={-10} translateYnum={10} scale={1.4} Color1={"rgb(252,209,215)"} Color2={"rgb(233,177,205)"} Color1Opacity={"rgba(253, 158, 225, 0.222)"}/>           
+                        <FlowerCornerDeco/>        
                  </div>    
                 </div>
                 </div>
 
             <div className="middleContactContainer"></div>
-            <div className="downContactContainer"></div>
+            <div className="wave"></div>
+            <div className="downContactContainer">
+
+            </div>
 
            
         </div>

@@ -25,6 +25,7 @@
     
 }
 
+/*      UP CONTAINER START       */
 .upContactContainer{
     flex: 2;
     display: flex;
@@ -38,35 +39,56 @@
 
 .sectionRight {
     /* background-color: antiquewhite; */
-    flex: 2;
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: end;
-
-    
+    align-items: center; 
 }
 
 .sectionLeft{
     /* background-color: antiquewhite; */
-    flex: 2;
-    display: flex;  
-    align-items: start;
-
-    
-}
-
-.downContactContainer{
     flex: 1;
-    width: 100%;
-    background-color: rgb(95, 170, 255);
+    display: flex;  
+    align-items: center; 
 }
 
 
-.right .cornerDecor{
-    background-color: blueviolet;
-   
-
+.cornerDecor{
+    padding: 0vw;
+    margin: 0vw; 
 }
+
+/*      UP CONTAINER END       */
+
+.middleContactContainer{
+    flex: 4;
+}
+
+.wave{
+    flex: 1;
+    width: 100vw;
+    background-color:rgb(95, 170, 255) ;
+    border-radius: 30vw/5vw 5vw 0 0
+}
+.downContactContainer{
+    flex: 4;
+    width: 100vw;
+    /* background-color: rgb(95, 170, 255);
+    border-radius: 30vw/5vw 5vw 0 0 ; */
+  
+    background-image: radial-gradient(ellipse farthest-corner at 50vw 1vw , rgb(95, 170, 255) 50vw, rgba(255, 255, 255, 0.918) 0%, #21643b 50%); */
+
+
+    /* width: 100%;
+    background-image: radial-gradient(ellipse farthest-corner at 30vw 1vw , #4580ff 50vw, rgba(17, 80, 17, 0.918) 0%, #077e35 50%); */
+}
+
+
+
+
+
+
 
 /* .contactContainer h1{
     color: white;

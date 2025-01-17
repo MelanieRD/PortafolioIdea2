@@ -48,8 +48,6 @@
     transition: 0.9s; 
     rotate: -35deg; /* sombras de hojas*/
     cursor: pointer;
-    
-  
    
   }
   
@@ -80,11 +78,7 @@
   
   
 
-  /* Corner deco */
-
-  .cornerDecor{
-    padding: 2vw;
-  }
+ 
   .cornerRightLDeco{
     
     width: 15vw;
@@ -95,32 +89,15 @@
     box-shadow: 0.5vw 1.5vw 0vw 0.5vw #08775f;
     border-radius: 30vw 0 28vw 0vw;
     overflow: hidden;
-    transform-origin: bottom;
+     transform-origin: bottom; 
     flex-shrink: 0;
-    z-index: -1;
+   
   
     transform: rotate(85deg) translate(-5vw, -10vw);
     opacity: 0.9;
+    z-index: -1;
   }
 
-  .cornerLeftLDeco{
-    display: flex;
-    width: 10vw;
-    height: 15vw ;
-    background-color: #788403;
-    border: #788403 solid 0.8vw;
-    /* box-shadow: 0 0 1vw 0.1vw #36a2c4; */
-    box-shadow: 0.5vw 1.5vw 0vw 0.5vw #08775f;
-    border-radius: 30vw 0 28vw 0vw;
-    overflow: hidden;
-    transform-origin: bottom;
-    flex-shrink: 0;
-    z-index: -1;
-  
-    rotate: 120deg;
-    translate: -5vw -25vw;
-    opacity: 0.9;
-  }
 
   
   @media(max-width: 768px) {
