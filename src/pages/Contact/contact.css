@@ -101,7 +101,10 @@
     }
 
     .middleContactContainer{
+        display: flex;
         flex: 2;
+       
+        
     }
     .wave{
         flex: 0.5;
