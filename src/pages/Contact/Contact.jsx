@@ -3,6 +3,7 @@ import "./contact.css";
 import { animated, useTrail } from "@react-spring/web";
 import { FaArtstation } from "react-icons/fa";
 import { FlowerCornerDeco } from "../../components/BranchDecoration/FlowerCornerDeco/FlowerCornerDeco";
+import { TechIcon } from "../../components/TechIcon/TechIcon";
 export const Contact = () => {
     const imgUrl = "url(./img/";
     const extension = ".png)";
@@ -42,7 +43,9 @@ export const Contact = () => {
                 </div>
                 </div>
 
-            <div className="middleContactContainer"></div>
+            <div className="middleContactContainer">
+              <TechIcon iconTag={<LiaLinkedin className="icon"/>}/>
+            </div>
             <div className="wave"></div>
             <div className="downContactContainer">
 

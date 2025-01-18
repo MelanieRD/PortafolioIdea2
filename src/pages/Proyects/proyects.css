@@ -27,8 +27,7 @@
 
  overflow-x: scroll;
  overflow-y: hidden;
-
- 
+ translate: -0vw -3vw; ;
  direction: rtl; /* right to left, como que lo voltea XD1 */
   
 }
@@ -40,6 +39,7 @@
 
 .branchContainer > * {
   direction: ltr; /* contenido del contenedor se mantiene como estaba */
+  
 }
 
 .branchContainer::-webkit-scrollbar {
@@ -73,7 +73,7 @@
   /*Para el scroll hice esto grandisimo XD*/
   width: 250vw;
   scale: 0.8;
-  translate: -30vw 0vw;
+  translate: -30vw 0vw; ;
 }
 
 .trunk {
