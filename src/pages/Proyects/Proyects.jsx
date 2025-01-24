@@ -9,8 +9,8 @@ import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
 
 export const Proyects = () => {
   const titleText = "Proyects".split("");
-  titleText.unshift(<TechIcon iconTag={<BiLeftArrow className="iconRow" />} imgBackground={"url(/img/container1.png)"} paddingVW={"0.3vw"}/>);
-  titleText.push(<TechIcon iconTag={<BiRightArrow className="iconRow" />} imgBackground={"url(/img/container1.png)"} paddingVW={"0.3vw"}/>);
+  titleText.unshift(<TechIcon iconTag={<BiLeftArrow className="iconRow" />} imgBackground={"url(/img/container1.png)"} paddingVW={"0.2vw"} />);
+  titleText.push(<TechIcon iconTag={<BiRightArrow className="iconRow" />} imgBackground={"url(/img/container1.png)"} paddingVW={"0.2vw"} />);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); 
   const [ref, inView] = useInView({
     //top right bottom left
@@ -53,9 +53,9 @@ export const Proyects = () => {
       <div className="decobranchcute"><BranchDecoration Rotation={0} Scale={0.6} TranslateX={-35} TranslateY={-9}  /></div>
       <div className="decobranchcute" style={{paddingTop:"10vw", paddingBottom:"10vw"}}><BranchDecoration Rotation={0} Scale={-0.7} TranslateX={15} TranslateY={-9}  /></div>  
       <animated.div ref={ref} className="proyectsContainer">
+        
         <div className="titleProyects">           
-         
-          <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center"}}>
+          <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", margin: "1vw" }}>
             {proyectsTextTrail.map((props, index) => (
               <animated.h2 style={{ margin: "0.5vw", ...props}} key={index}>
                 {titleText[index]}

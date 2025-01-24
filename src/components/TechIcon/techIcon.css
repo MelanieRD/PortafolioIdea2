@@ -9,8 +9,7 @@
   background-repeat: no-repeat;
   transition: 0.5s;
 
-  background-color: antiquewhite;
-
+  z-index: 100;
 }
 
 .iconContainer:hover {
@@ -37,7 +36,7 @@
 .iconRow {
   width: 4vw;
   height: 3vw;
-
+  margin: 3vw;
 
 
   border-radius: 20px;

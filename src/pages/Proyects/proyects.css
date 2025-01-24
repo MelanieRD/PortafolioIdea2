@@ -8,25 +8,14 @@
   
 }
 
-
 .titleProyects {
   flex: 1;
   font-size: 3vw;
-  color: rgb(0, 0, 0);
+  color: white;
 
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
   padding-top: 2vw;
-}
-
-
-
-
-.proyectsButtons{
-  display: flex;
-  width: 20vw;
-  justify-content: center;
-  background-color: #7e361a;
 }
 
 .branchContainer {
