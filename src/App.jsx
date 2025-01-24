@@ -12,6 +12,9 @@ import { Contact } from "./pages/Contact/Contact";
 
 function App() {
   const parllaxRef = useRef();
+  const homeRef = useRef(); 
+  const proyectsRef = useRef(); 
+  const contactMeRef = useRef();
 
 
 
@@ -30,11 +33,19 @@ function App() {
         
     <div className="app" style={{ backgroundColor: "#F2EBE5", overflow: "hidden" }}>
 
-      <Nav />
-      <Home />
-      <Tech textTech={"My Technologies"}/>
-      <Proyects />
-      <Contact/>
+      <Nav homeRef={homeRef} proyectsRef={proyectsRef} contacRef={contactMeRef}/>
+        <div ref={homeRef}>
+          <Home />
+          <Tech textTech={"My Technologies"}/>
+        </div>
+      
+        <div ref={proyectsRef} >
+           <Proyects />
+       </div>
+      
+       <div ref={contactMeRef}>
+         <Contact/>
+       </div>
      
     </div>
    

@@ -18,7 +18,7 @@ export const Proyects = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); 
   const [ref, inView] = useInView({
     //top right bottom left
-    threshold: 0.7, // El 50% del elemento debe estar visible para que se considere "en vista"
+    threshold: 0.4, // El 50% del elemento debe estar visible para que se considere "en vista"
   });
 
 // Mooving the branch with buttons n.n! :3 :d
@@ -27,14 +27,13 @@ export const Proyects = () => {
   
   const handleRightRowClick = () => {
     if (branchContainerRef.current) {
-      branchContainerRef.current.scrollBy({ left: -600, behavior: "smooth" });
+      branchContainerRef.current.scrollBy({ left: -1000, behavior: "smooth" });
     }
-    console.log("clicked");
   }
 
   const handleLeftRowClick = () => {
     if (branchContainerRef.current) {
-      branchContainerRef.current.scrollBy({ left: 600, behavior: "smooth" });
+      branchContainerRef.current.scrollBy({ left: 1000, behavior: "smooth" });
     }
   }
 
@@ -114,7 +113,7 @@ export const Proyects = () => {
                 <Leaves TypeLeaves={"downLeaves"} />   
               </div>
 
-              {!isMobile && <h1 style={{translate:"3vw 5vw", fontSize:"2vw"}}> 	&lt;--- Scroll me n///n</h1>} 
+              {/* {!isMobile && <h1 style={{translate:"3vw 5vw", fontSize:"2vw"}}> 	&lt;--- Scroll me n///n</h1>}  */}
             </div>
           
           </animated.div>

@@ -52,14 +52,19 @@
 }
 
 .branchContainer::-webkit-scrollbar-thumb {
-  border-radius: 1vw;
+  /* border-radius: 1vw;
   border: #692d15 0.5vw solid;
-  background-color: #7e361a;
+  background-color: #7e361a; */
+  border-radius: 1vw;
+  border: #98cae8 0.5vw solid;
+  background-color: #98cae8;
 }
 
 .branchContainer::-webkit-scrollbar-thumb:hover {
-  background: #9b4a31; /* Color de la barra de desplazamiento al pasar el ratón */
-  cursor: pointer;
+  /* background: #9b4a31; 
+  cursor: pointer; */
+  background: #98cae8; /* Color de la barra de desplazamiento al pasar el ratón */
+ 
 }
 
 
