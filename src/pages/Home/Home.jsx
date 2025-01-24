@@ -36,7 +36,7 @@ export const Home = () => {
         <div className="content">
           <ContentAbout />
         </div>
-        <div className=" dropContainer">
+        <div className=" dropContainer" >
           <div className="dropdesign " /*style={{ backgroundColor: "red", borderRadius: "200px" }}*/>
             <ImgCenterHome />
           </div>

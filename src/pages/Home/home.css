@@ -25,7 +25,7 @@
   /* background-color: aqua; */
   
   
-  padding-top: 1vw;
+  padding-top: 5vw;
   overflow: hidden;
 }
 
@@ -33,7 +33,7 @@
   display: flex;
   justify-content: center;
   align-items: end;
-  margin: 1vw;
+  margin: 1vw 1vw 0vw 0vw;
 
   width: 50vw;
   height: 25vw;

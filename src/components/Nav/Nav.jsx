@@ -1,6 +1,8 @@
+import { useEffect, useState } from "react";
 import "./nav.css";
 
 export const Nav = ({homeRef, proyectsRef, contacRef}) => {
+  const [isSticky, setIsSticky] = useState(false);
   
   const handleScrollToHome = () => {
     if (homeRef.current) {
@@ -10,7 +12,7 @@ export const Nav = ({homeRef, proyectsRef, contacRef}) => {
   const handleScrollToProyects = () => {
     if (proyectsRef.current) {
       const offsetTop = proyectsRef.current.offsetTop;
-      window.scrollTo({ top: offsetTop + 450, behavior: "smooth" });
+      window.scrollTo({ top: offsetTop + 300, behavior: "smooth" });
     }
   };
   const handleScrollToContactMe = () => {
@@ -19,9 +21,25 @@ export const Nav = ({homeRef, proyectsRef, contacRef}) => {
     }	
   };
 
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []); 
+
+  
 
   return (
-    <div className="nav">
+    <div className={isSticky ? "nav sticky" : "nav sticky"}> 
       <div className="logo"></div>
       {/* <img className={"logo"} src="#" alt=" MelyCoconut logo" /> */}
 
