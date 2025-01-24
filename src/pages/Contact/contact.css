@@ -71,7 +71,8 @@
 
 .wave{
     flex: 1;
-    width: 100vw;
+    width: 105vw;
+    margin-top: 1vw;
     background-color:rgb(95, 170, 255) ;
     border-radius: 30vw/5vw 5vw 0 0
 }
@@ -81,7 +82,7 @@
     /* background-color: rgb(95, 170, 255);
     border-radius: 30vw/5vw 5vw 0 0 ; */
   
-    background-image: radial-gradient(ellipse farthest-corner at 50vw 1vw , rgb(95, 170, 255) 50vw, rgba(255, 255, 255, 0.918) 0%, #21643b 50%); 
+    background-image: radial-gradient(ellipse farthest-corner at 50vw 0vw , rgb(95, 170, 255) 50vw, rgba(255, 255, 255, 0.918) 0%, #21643b 50%); 
     /* width: 100%;
     background-image: radial-gradient(ellipse farthest-corner at 30vw 1vw , #4580ff 50vw, rgba(17, 80, 17, 0.918) 0%, #077e35 50%);  */
 }
