@@ -3,7 +3,7 @@
   justify-content: center;
   text-align: center;
   padding: 1vw;
-
+  max-height: 20vw;
   background-image: url("../img/container.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -15,10 +15,11 @@
 
 
 .iconContainer:hover {
-  background-color: #ffc85a7e;
+  
+ background-color: #ffc85a7e; 
   
   /* X, Y, Opacity */
-  box-shadow: 0vw 0vw 0.8vw #ffc85a7e;
+  box-shadow: 0vw 0vw 0.8vw #ffc85a7e; 
  
   border-radius: 1vw;
   cursor: pointer;
@@ -30,6 +31,7 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  max-height: 10vw;
 
   background-image: url("../img/container.png");
   background-size: contain;
@@ -40,9 +42,15 @@
 }
 
 .iconRowContainer:hover{
-  background-color: #096b0e7e;
+  background-color: #ffc85a7e; 
+  /* X, Y, Opacity */
+  box-shadow: 0vw 0vw 0.8vw #ffc85a7e; 
+
+  scale: 1.1;
+  border-radius: 1vw;
 
   z-index: 100;
+  cursor: pointer;
 }
 
 .icon {
@@ -58,6 +66,7 @@
   width: 4vw;
   height: 3vw;
   margin: 3vw;
+
 
 
   border-radius: 20px;
@@ -79,6 +88,11 @@
   .technologies .icon {
     width: 16vw;
     height: 14vw;
+  }
+
+
+  .iconRowContainer{
+    padding: 1.5vw;
   }
   
 }
