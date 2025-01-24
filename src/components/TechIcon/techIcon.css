@@ -92,7 +92,16 @@
 
 
   .iconRowContainer{
-    padding: 1.5vw;
+    padding: 1.5vw; 
+    max-height: 25vw;
   }
+
+  .iconRow {
+    width: 10vw;
+    height: 8vw;
+  }
+
+  
+
   
 }
