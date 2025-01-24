@@ -38,6 +38,11 @@ export const Proyects = () => {
   }
 
   // final of moving with buttons teh branchicutee
+
+
+  const handleProjectsClick = (URL) => {
+    window.open(URL, "_blank");
+  }
   
   useEffect(() => {
     let timeAnimationDuration = 500; 
@@ -100,7 +105,7 @@ export const Proyects = () => {
                 <Leaves TypeLeaves={"upLeaves"} />
                 <Leaves TypeLeaves={"upLeaves"} />
                 <Leaves TypeLeaves={"upLeaves"} />
-                <Leaves title={"Pet Myproductivity"} desc={"A productivity app"} TypeLeaves={"upLeaves"} img={"url(/img/proyect1.jpeg)"} />
+                <Leaves title={"Pet Myproductivity"} desc={"A productivity app"} TypeLeaves={"upLeaves"} img={"url(/img/proyect1.jpeg)"} eventOnClick={()=>{handleProjectsClick("https://github.com/MelanieRD/PetMyProductivity")}} />
               </div>
               <div className="trunk">
                 <div className="trunkhole"></div>

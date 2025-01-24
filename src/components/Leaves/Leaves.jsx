@@ -2,7 +2,7 @@ import { useSpring, animated, useChain, useSpringRef } from "@react-spring/web";
 import "./Leaves.css";
 import { useEffect, useState } from "react";
 
-export const Leaves = ({ TypeLeaves, title, desc, img }) => {
+export const Leaves = ({ TypeLeaves, title, desc, img, eventOnClick }) => {
   const [LeavePosition, setLeavePosition] = useState(0);
   const randomDeg = Math.floor(Math.random() * 5 + 3);
   const randomDuration = Math.floor(Math.random() * 500 + 1000);
@@ -36,10 +36,10 @@ export const Leaves = ({ TypeLeaves, title, desc, img }) => {
     
 
   return (
-    <animated.div style={{ ...growingLeaves, ...movementLeaves }} className={TypeLeaves} onMouseEnter={() =>{console.log("enter")}}>
-      <div className="leaveContainer">
+    <animated.div style={{ ...growingLeaves, ...movementLeaves }} className={TypeLeaves} onMouseEnter={() =>{console.log("enter")}} onClick={eventOnClick}  >
+      <div className="leaveContainer" >
         
-        <div className="upLeave frac" style={{backgroundImage:img}}></div>
+        <div className="upLeave frac" style={{backgroundImage:img,  cursor: "pointer"}} ></div>
         <div className="downLeave frac">
           <div className="textContainer">
             <p className="proyectTitle">{title}</p>

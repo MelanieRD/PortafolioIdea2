@@ -22,7 +22,8 @@ export const Nav = ({homeRef, proyectsRef, contacRef}) => {
 
   return (
     <div className="nav">
-      <img className={"logo"} src="#" alt=" MelyCoconut logo" />
+      <div className="logo"></div>
+      {/* <img className={"logo"} src="#" alt=" MelyCoconut logo" /> */}
 
       <ul className="nav-links">
         <li onClick={handleScrollToHome}>Home</li>
@@ -30,7 +31,7 @@ export const Nav = ({homeRef, proyectsRef, contacRef}) => {
         <li onClick={handleScrollToContactMe}>Contact</li>
       </ul>
 
-      <div className="toggleMenu"> icon</div>
+      <div className="toggleMenu"> </div>
     </div>
   );
 };

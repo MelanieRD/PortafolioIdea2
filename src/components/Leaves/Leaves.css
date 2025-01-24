@@ -12,7 +12,7 @@
   overflow: hidden;
   transform-origin: bottom;
   flex-shrink: 0;
-  z-index: -1;
+  z-index: 50;
 
   opacity: 0.9;
 }
