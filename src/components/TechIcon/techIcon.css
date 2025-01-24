@@ -9,6 +9,8 @@
   background-repeat: no-repeat;
   transition: 0.5s;
 
+  background-color: antiquewhite;
+
 }
 
 .iconContainer:hover {
@@ -31,6 +33,17 @@
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
 }
+
+.iconRow {
+  width: 4vw;
+  height: 3vw;
+
+
+
+  border-radius: 20px;
+}
+
+
 
 @media(max-width: 768px) {
 

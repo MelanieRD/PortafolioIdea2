@@ -32,7 +32,7 @@ function App() {
 
       <Nav />
       <Home />
-      <Tech />
+      <Tech textTech={"My Technologies"}/>
       <Proyects />
       <Contact/>
      

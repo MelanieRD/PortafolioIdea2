@@ -3,9 +3,14 @@ import { Leaves } from "../../components/Leaves/Leaves";
 import "./proyects.css";
 import { useEffect, useState } from "react";
 import { BranchDecoration } from "../../components/BranchDecoration/BranchDecoration";
+import { TechIcon } from "../../components/TechIcon/TechIcon";
+import { Tech } from "../Tech/Tech";
+import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
 
 export const Proyects = () => {
   const titleText = "Proyects".split("");
+  titleText.unshift(<TechIcon iconTag={<BiLeftArrow className="iconRow" />} imgBackground={"url(/img/container1.png)"} paddingVW={"0.3vw"}/>);
+  titleText.push(<TechIcon iconTag={<BiRightArrow className="iconRow" />} imgBackground={"url(/img/container1.png)"} paddingVW={"0.3vw"}/>);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); 
   const [ref, inView] = useInView({
     //top right bottom left
@@ -13,9 +18,9 @@ export const Proyects = () => {
   });
   
   useEffect(() => {
-    let timeAnimationDuration = 500; // Duración de la animación en milisegundos
+    let timeAnimationDuration = 500; 
 
-    if(isMobile){timeAnimationDuration = 1000;} // Si es mobile, la duración de la animación es de 500ms
+    if(isMobile){timeAnimationDuration = 1000;} 
 
     console.log(inView);
     if (inView) {
@@ -45,48 +50,53 @@ export const Proyects = () => {
 
   return (
     <>
-          <div className="decobranchcute"><BranchDecoration Rotation={0} Scale={0.6} TranslateX={-35} TranslateY={-9}  /></div>
-          <div className="decobranchcute" style={{paddingTop:"10vw", paddingBottom:"10vw"}}><BranchDecoration Rotation={0} Scale={-0.7} TranslateX={15} TranslateY={-9}  /></div>  
-    <animated.div ref={ref} className="proyectsContainer">
-      
-      <div className="titleProyects">           
-        <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
-          {proyectsTextTrail.map((props, index) => (
-            <animated.h2 style={props} key={index}>
-              {titleText[index]}
-            </animated.h2>
-          ))}
-        </div>
-      </div>
+      <div className="decobranchcute"><BranchDecoration Rotation={0} Scale={0.6} TranslateX={-35} TranslateY={-9}  /></div>
+      <div className="decobranchcute" style={{paddingTop:"10vw", paddingBottom:"10vw"}}><BranchDecoration Rotation={0} Scale={-0.7} TranslateX={15} TranslateY={-9}  /></div>  
+      <animated.div ref={ref} className="proyectsContainer">
+        <div className="titleProyects">           
+         
+          <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center"}}>
+            {proyectsTextTrail.map((props, index) => (
+              <animated.h2 style={{ margin: "0.5vw", ...props}} key={index}>
+                {titleText[index]}
+              </animated.h2>
+            ))}
+          </div>
           
-      <animated.div style={lefttoRight} className="branchContainer">
-     
-        <div className="branch">
-          
-          <div className="leaves">
-          <Leaves TypeLeaves={"upLeaves"} />
-          <Leaves TypeLeaves={"upLeaves"} />
-          <Leaves TypeLeaves={"upLeaves"} />
-          <Leaves title={"Pet Myproductivity"} desc={"A productivity app"} TypeLeaves={"upLeaves"} img={"url(/img/proyect1.jpeg)"} />
-          </div>
-          <div className="trunk">
-            <div className="trunkhole"></div>
-          </div>
-
-          <div className="leaves">
-            <Leaves TypeLeaves={"downLeaves"} />
-            <Leaves TypeLeaves={"downLeaves"} />
-            <Leaves TypeLeaves={"downLeaves"} />
-            <Leaves TypeLeaves={"downLeaves"} />
-            
-          </div>
-
-          {!isMobile && <h1 style={{translate:"3vw 5vw", fontSize:"2vw"}}> 	&lt;--- Scroll me n///n</h1>} 
         </div>
-      
+
+        {/* <div className="proyectsButtons" style={{display:"flex", flexDirection:"row", justifyContent:"center", alignItems:"center"}}>
+        
+        <TechIcon iconTag={<BiRightArrow className="iconRow" />} imgBackground={"url(/img/container1.png)"} paddingVW={"0.2vw"} />    
+        </div> */}
+          
+        <animated.div style={lefttoRight} className="branchContainer">
+        
+            <div className="branch">
+              
+              <div className="leaves">
+                <Leaves TypeLeaves={"upLeaves"} />
+                <Leaves TypeLeaves={"upLeaves"} />
+                <Leaves TypeLeaves={"upLeaves"} />
+                <Leaves title={"Pet Myproductivity"} desc={"A productivity app"} TypeLeaves={"upLeaves"} img={"url(/img/proyect1.jpeg)"} />
+              </div>
+              <div className="trunk">
+                <div className="trunkhole"></div>
+              </div>
+
+              <div className="leaves">
+                <Leaves TypeLeaves={"downLeaves"} />
+                <Leaves TypeLeaves={"downLeaves"} />
+                <Leaves TypeLeaves={"downLeaves"} />
+                <Leaves TypeLeaves={"downLeaves"} />   
+              </div>
+
+              {!isMobile && <h1 style={{translate:"3vw 5vw", fontSize:"2vw"}}> 	&lt;--- Scroll me n///n</h1>} 
+            </div>
+          
+          </animated.div>
+
       </animated.div>
-
-    </animated.div>
     <div className="decobranchcute" style={{paddingTop:"10vw", paddingBottom:"10vw"}}><BranchDecoration Rotation={0} Scale={-0.7} TranslateX={15} TranslateY={-9}  /></div>  
 
            <div className="decobranchcute" style={{ paddingBottom:"15vw"}}><BranchDecoration Rotation={0} Scale={0.6} TranslateX={-35} TranslateY={-9}  /></div>  

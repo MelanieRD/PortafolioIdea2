@@ -4,7 +4,7 @@ import { TechIcon } from "../../components/TechIcon/TechIcon";
 import { useTrail, animated } from "@react-spring/web";
 import { OpacityDiv } from "../../components/OpacityDiv/OpacityDiv";
 
-export const Tech = () => {
+export const Tech = ({textTech}) => {
   const imgUrl = "url(./img/";
   const extension = ".png)";
 
@@ -34,12 +34,12 @@ export const Tech = () => {
       <div className="techContainer">
         <OpacityDiv durationSec={1000} opacityFrom={0} opacityTo={1}>
         
-          <h1>My technologies</h1>
+          <h1>{textTech}</h1>
         </OpacityDiv>
 
         <div className="technologies">
           {techTrail.map((props, index) => (
-            <TechIcon key={index} iconTag={icons[index].iconTag} imgBackground={imgUrl + "container" + icons[index].containerImg + extension} styleProp={props} />
+            <TechIcon key={index} iconTag={icons[index].iconTag} imgBackground={imgUrl + "container" + icons[index].containerImg + extension} styleProp={props}  />
           ))}
         </div>
       </div>
