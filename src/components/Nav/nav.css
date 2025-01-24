@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10px;
+  padding: 0.5vw;
   background-color: #332528ee;
   /*
   #feaa00
@@ -32,6 +32,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
   flex: 1;
 }
 
@@ -39,11 +40,9 @@
   color: white;
   font-weight: bolder;
   list-style: none;
-  font-size: 1vw;
-  text-shadow: black 2px 2px 3px;
-
-  padding: 5px;
-  margin: 10px;
+  font-size: 1.2rem;
+  margin: 1vw;
+  text-shadow: 0.1vw 0.1vw 0.1vw  #332525fa;
   cursor: pointer;
 }
 
@@ -54,4 +53,13 @@
 
 .toggleMenu {
   flex: 1;
+}
+
+
+@media (max-width: 768px) {
+  .nav-links li {
+
+    margin: 3vw;
+
+  }
 }
