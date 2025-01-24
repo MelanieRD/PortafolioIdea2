@@ -1,7 +1,7 @@
 import { animated } from "@react-spring/web";
 import "./techIcon.css";
 
-export const TechIcon = ({ iconTag, imgBackground, styleProp, paddingVW, marginVW }) => {
+export const TechIcon = ({ iconTag, imgBackground, styleProp, paddingVW, marginVW, addclassName, eventOnclick}) => {
 
   const combinedStyle = {
     ...styleProp,
@@ -11,7 +11,7 @@ export const TechIcon = ({ iconTag, imgBackground, styleProp, paddingVW, marginV
   };
 
   return (
-    <animated.div className="iconContainer" style={combinedStyle}>
+    <animated.div className={addclassName} style={combinedStyle} onClick={eventOnclick}>
       {iconTag}
     </animated.div>
   );

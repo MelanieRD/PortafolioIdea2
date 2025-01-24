@@ -12,6 +12,8 @@
   z-index: 100;
 }
 
+
+
 .iconContainer:hover {
   background-color: #ffc85a7e;
   
@@ -22,6 +24,25 @@
   cursor: pointer;
   transform: scale(1.2) !important;
   transition: 0.5s;
+}
+
+.iconRowContainer{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  background-image: url("../img/container.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+
+  z-index: 100;
+}
+
+.iconRowContainer:hover{
+  background-color: #096b0e7e;
+
+  z-index: 100;
 }
 
 .icon {

@@ -39,7 +39,7 @@ export const Tech = ({textTech}) => {
 
         <div className="technologies">
           {techTrail.map((props, index) => (
-            <TechIcon key={index} iconTag={icons[index].iconTag} imgBackground={imgUrl + "container" + icons[index].containerImg + extension} styleProp={props}  />
+            <TechIcon key={index} iconTag={icons[index].iconTag} imgBackground={imgUrl + "container" + icons[index].containerImg + extension} styleProp={props} addclassName={"iconContainer"} />
           ))}
         </div>
       </div>

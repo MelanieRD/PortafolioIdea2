@@ -1,21 +1,44 @@
 import { to, useTrail, animated, useSpring, useInView } from "@react-spring/web";
 import { Leaves } from "../../components/Leaves/Leaves";
 import "./proyects.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { BranchDecoration } from "../../components/BranchDecoration/BranchDecoration";
 import { TechIcon } from "../../components/TechIcon/TechIcon";
 import { Tech } from "../Tech/Tech";
 import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
+import { use } from "react";
 
 export const Proyects = () => {
+
+
+  // TEXT ANIMATION
   const titleText = "Proyects".split("");
-  titleText.unshift(<TechIcon iconTag={<BiLeftArrow className="iconRow" />} imgBackground={"url(/img/container1.png)"} paddingVW={"0.2vw"} />);
-  titleText.push(<TechIcon iconTag={<BiRightArrow className="iconRow" />} imgBackground={"url(/img/container1.png)"} paddingVW={"0.2vw"} />);
+  titleText.unshift(<TechIcon iconTag={<BiLeftArrow className="iconRow" />} imgBackground={"url(/img/container1.png)"} paddingVW={"0.2vw"} addclassName={"iconRowContainer"} eventOnclick={()=>{handleLeftRowClick()}}/>);
+  titleText.push(<TechIcon iconTag={<BiRightArrow className="iconRow" />} imgBackground={"url(/img/container1.png)"} paddingVW={"0.2vw"} addclassName={"iconRowContainer"} eventOnclick={()=>{handleRightRowClick()}}/>);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); 
   const [ref, inView] = useInView({
     //top right bottom left
     threshold: 0.7, // El 50% del elemento debe estar visible para que se considere "en vista"
   });
+
+// Mooving the branch with buttons n.n! :3 :d
+  const branchContainerRef = useRef(null);
+
+  
+  const handleRightRowClick = () => {
+    if (branchContainerRef.current) {
+      branchContainerRef.current.scrollBy({ left: -600, behavior: "smooth" });
+    }
+    console.log("clicked");
+  }
+
+  const handleLeftRowClick = () => {
+    if (branchContainerRef.current) {
+      branchContainerRef.current.scrollBy({ left: 600, behavior: "smooth" });
+    }
+  }
+
+  // final of moving with buttons teh branchicutee
   
   useEffect(() => {
     let timeAnimationDuration = 500; 
@@ -50,8 +73,8 @@ export const Proyects = () => {
 
   return (
     <>
-      <div className="decobranchcute"><BranchDecoration Rotation={0} Scale={0.6} TranslateX={-35} TranslateY={-9}  /></div>
-      <div className="decobranchcute" style={{paddingTop:"10vw", paddingBottom:"10vw"}}><BranchDecoration Rotation={0} Scale={-0.7} TranslateX={15} TranslateY={-9}  /></div>  
+      <div className="decobranchcute"><BranchDecoration Rotation={0} Scale={0.6} TranslateX={-15} TranslateY={-9}  /></div>
+      <div className="decobranchcute" style={{paddingTop:"10vw", paddingBottom:"10vw"}}><BranchDecoration Rotation={0} Scale={-0.7} TranslateX={70} TranslateY={-9}  /></div>  
       <animated.div ref={ref} className="proyectsContainer">
         
         <div className="titleProyects">           
@@ -70,7 +93,7 @@ export const Proyects = () => {
         <TechIcon iconTag={<BiRightArrow className="iconRow" />} imgBackground={"url(/img/container1.png)"} paddingVW={"0.2vw"} />    
         </div> */}
           
-        <animated.div style={lefttoRight} className="branchContainer">
+        <animated.div ref={branchContainerRef} style={lefttoRight} className="branchContainer">
         
             <div className="branch">
               
@@ -97,9 +120,9 @@ export const Proyects = () => {
           </animated.div>
 
       </animated.div>
-    <div className="decobranchcute" style={{paddingTop:"10vw", paddingBottom:"10vw"}}><BranchDecoration Rotation={0} Scale={-0.7} TranslateX={15} TranslateY={-9}  /></div>  
+    <div className="decobranchcute" style={{paddingTop:"10vw", paddingBottom:"10vw"}}><BranchDecoration Rotation={0} Scale={-0.7} TranslateX={60} TranslateY={-9}  /></div>  
 
-           <div className="decobranchcute" style={{ paddingBottom:"15vw"}}><BranchDecoration Rotation={0} Scale={0.6} TranslateX={-35} TranslateY={-9}  /></div>  
+           <div className="decobranchcute" style={{ paddingBottom:"15vw"}}><BranchDecoration Rotation={0} Scale={0.6} TranslateX={-15} TranslateY={-9}  /></div>  
     </>
   );
 };

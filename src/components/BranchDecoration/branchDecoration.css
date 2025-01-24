@@ -2,7 +2,8 @@
   .branchContainerDeco {
     display: flex;
     /* width: 200vh; */
-    width: 100vw;
+    width: 50vw;
+    /* background-color: #e64202; */
     flex: 1;
     flex-direction: column; 
     padding-top: 1vw;
