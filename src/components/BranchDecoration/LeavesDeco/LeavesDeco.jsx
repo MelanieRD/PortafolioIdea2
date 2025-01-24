@@ -10,12 +10,19 @@ export const LeavesDeco = ({ TypeLeaves, title, desc, img, Rotationnum, translat
   const growingLeavesRef = useSpringRef();
   const movementLeavesRef = useSpringRef();
 
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };  window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);   
+
   const growingLeaves = useSpring({
     ref: growingLeavesRef,
     from: { transform: "scale(0)" },
     to: { transform: "scale(" + randomScale + ")" },
     config: { duration: randomDuration },
-    
   });
 
   const movementLeaves= useSpring({
@@ -24,14 +31,15 @@ export const LeavesDeco = ({ TypeLeaves, title, desc, img, Rotationnum, translat
     to: { transform: "rotate(" + randomDeg + "deg) translate("+translateXnum+"vw, "+ translateYnum+"vw) scale("+scale+")" },
     config: { duration: 3000 },
     loop: { reverse: true },
+
   });
 
   useChain([growingLeavesRef,movementLeavesRef]);
 
   return (
     <animated.div style={{
-    transform: "rotate("+Rotationnum+"deg) translate("+translateXnum+"vw, "+ translateYnum+"vw) scale("+scale+")"
-     ,width:Width+"vw", height:Height+"vw", backgroundColor: Color1, borderColor: Color1, boxShadow: "0.5vw 1.5vw 0vw 0.5vw "+Color2, zIndex:{Zindex}, ...movementLeaves, 
+      transform: "rotate("+Rotationnum+"deg) translate("+translateXnum+"vw, "+ translateYnum+"vw) scale("+scale+")"
+      ,width:Width+"vw", height:Height+"vw", backgroundColor: Color1, borderColor: Color1, boxShadow: "0.5vw 1.5vw 0vw 0.5vw "+Color2, zIndex:{Zindex}, ...(!isMobile && movementLeaves), 
       }} className={TypeLeaves} onMouseEnter={() =>{console.log("enter")}}>
       <div className="leaveContainerDeco" >
         <div className="upLeaveDeco fracDeco" style={{ backgroundColor:Color1Opacity}}></div>
