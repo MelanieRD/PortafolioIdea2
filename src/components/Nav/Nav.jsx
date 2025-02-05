@@ -45,7 +45,7 @@ export const Nav = ({homeRef, proyectsRef, contacRef}) => {
 
       <ul className="nav-links">
         <li onClick={handleScrollToHome}>Home</li>
-        <li onClick={handleScrollToProyects}>Proyects</li>
+        <li onClick={handleScrollToProyects}>Projects</li>
         <li onClick={handleScrollToContactMe}>Contact</li>
       </ul>
 
