@@ -12,7 +12,7 @@ export const Proyects = () => {
 
 
   // TEXT ANIMATION
-  const titleText = "Proyects".split("");
+  const titleText = "Projects".split("");
   titleText.unshift(<TechIcon iconTag={<BiLeftArrow className="iconRow" />} imgBackground={"url(/img/container1.png)"} paddingVW={"0.2vw"} addclassName={"iconRowContainer"} eventOnclick={()=>{handleLeftRowClick()}}/>);
   titleText.push(<TechIcon iconTag={<BiRightArrow className="iconRow" />} imgBackground={"url(/img/container1.png)"} paddingVW={"0.2vw"} addclassName={"iconRowContainer"} eventOnclick={()=>{handleRightRowClick()}}/>);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); 
